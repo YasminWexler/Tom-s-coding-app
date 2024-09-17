@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import { Lobby } from './components/Lobby/Lobby';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';

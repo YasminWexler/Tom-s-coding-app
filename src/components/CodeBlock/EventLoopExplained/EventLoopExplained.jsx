@@ -61,7 +61,7 @@ export function EventLoopExplained() {
         connect.stop();
       }
     };
-  }, []);
+  }, [navigate, roomName]);
 
   const checkSolution = async (newCode) => {
     try {

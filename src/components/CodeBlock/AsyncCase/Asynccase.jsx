@@ -62,7 +62,7 @@ export function Asynccase() {
         connect.stop();
       }
     };
-  }, []);
+  }, [navigate, roomName]);
 
   const checkSolution = async (newCode) => {
     try {

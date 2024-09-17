@@ -60,7 +60,7 @@ export function PromisesPuzzle() {
         connect.stop();
       }
     };
-  }, []);
+  }, [navigate, roomName]);
 
   const checkSolution = async (newCode) => {
     try {

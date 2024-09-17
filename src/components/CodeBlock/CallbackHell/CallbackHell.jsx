@@ -62,7 +62,7 @@ export function CallbackHell() {
         connect.stop();
       }
     };
-  }, []);
+  }, [navigate, roomName]);
 
   const checkSolution = async (newCode) => {
     try {
