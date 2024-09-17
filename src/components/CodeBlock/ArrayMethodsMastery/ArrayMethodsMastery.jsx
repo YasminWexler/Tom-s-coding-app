@@ -16,7 +16,7 @@ export function ArrayMethodsMastery() {
 
   useEffect(() => {
     const connect = new HubConnectionBuilder()
-      .withUrl("https://localhost:7015/codeHub", {
+      .withUrl("https://toms-web-app-c664d2505215.herokuapp.com/codeHub", {
         withCredentials: true,
       })
       .withAutomaticReconnect()
@@ -62,12 +62,12 @@ export function ArrayMethodsMastery() {
         connect.stop();
       }
     };
-  }, []);
+  }, [navigate, roomName]);
 
   const checkSolution = async (newCode) => {
     try {
       const response = await fetch(
-        `https://localhost:7015/getSolutionByRoom/${roomName}`
+        `https://toms-web-app-c664d2505215.herokuapp.com/getSolutionByRoom/${roomName}`
       );
       const solution = await response.text(); // קבלת הפתרון מהשרת
       if (newCode.trim() === solution.trim()) {

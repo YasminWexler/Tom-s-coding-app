@@ -2,6 +2,10 @@
   "name": "tom_webapplication",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "18.x",
+    "npm": ">= 7"
+  },
   "dependencies": {
     "@microsoft/signalr": "^8.0.7",
     "@monaco-editor/react": "^4.6.0",
