@@ -69,7 +69,7 @@ export function ArrayMethodsMastery() {
       const response = await fetch(
         `https://toms-web-app-c664d2505215.herokuapp.com/getSolutionByRoom/${roomName}`
       );
-      const solution = await response.text(); // קבלת הפתרון מהשרת
+      const solution = await response.text(); 
       if (newCode.trim() === solution.trim()) {
         alert("Success! You've matched the solution! 😄");
       }
@@ -78,14 +78,14 @@ export function ArrayMethodsMastery() {
     }
   };
 
-  // שליחת עדכון קוד בזמן אמת
+ 
   const handleCodeChange = async (newCode) => {
-    setCode(newCode); // עדכון הקוד בעורך
-    checkSolution(newCode); // בדיקת התאמת הקוד לפתרון
+    setCode(newCode); 
+    checkSolution(newCode); 
 
     if (connection) {
       try {
-        await connection.invoke("UpdateCode", roomName, newCode); // שליחת הקוד לשרת ולעדכן בזמן אמת
+        await connection.invoke("UpdateCode", roomName, newCode); 
       } catch (error) {
         console.error("Failed to send code update: ", error);
       }
