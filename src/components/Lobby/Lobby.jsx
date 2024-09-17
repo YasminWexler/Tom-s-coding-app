@@ -9,7 +9,7 @@ export function Lobby() {
 
     try {
       const code = await fetch(
-        `https://localhost:7015/getBlockByTitle/${name}`,
+        `https://toms-web-app-c664d2505215.herokuapp.com/getBlockByTitle/${name}`,
         {
           method: "GET",
           headers: new Headers({
