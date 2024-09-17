@@ -3,8 +3,6 @@ import Editor from "@monaco-editor/react";
 import { useNavigate, useLocation } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import s from "./Style.module.css";
-import React from 'react';
-
 
 export function ArrayMethodsMastery() {
   const [role, setRole] = useState("student");
@@ -71,7 +69,7 @@ export function ArrayMethodsMastery() {
       const response = await fetch(
         `https://toms-web-app-c664d2505215.herokuapp.com/getSolutionByRoom/${roomName}`
       );
-      const solution = await response.text(); 
+      const solution = await response.text();
       if (newCode.trim() === solution.trim()) {
         alert("Success! You've matched the solution! 😄");
       }
@@ -80,14 +78,13 @@ export function ArrayMethodsMastery() {
     }
   };
 
- 
   const handleCodeChange = async (newCode) => {
-    setCode(newCode); 
-    checkSolution(newCode); 
+    setCode(newCode);
+    checkSolution(newCode);
 
     if (connection) {
       try {
-        await connection.invoke("UpdateCode", roomName, newCode); 
+        await connection.invoke("UpdateCode", roomName, newCode);
       } catch (error) {
         console.error("Failed to send code update: ", error);
       }

@@ -3,7 +3,6 @@ import Editor from "@monaco-editor/react";
 import { useNavigate, useLocation } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import s from "./Style.module.css";
-import React from 'react';
 
 export function CallbackHell() {
   const [role, setRole] = useState("student");
