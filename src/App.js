@@ -1,5 +1,7 @@
 import { Lobby } from './components/Lobby/Lobby';
 import './App.css';
+import React from 'react';
+
 import { Routes, Route } from 'react-router-dom';
 import {ArrayMethodsMastery} from './components/CodeBlock/ArrayMethodsMastery/ArrayMethodsMastery';
 import {Asynccase} from './components/CodeBlock/AsyncCase/Asynccase'
