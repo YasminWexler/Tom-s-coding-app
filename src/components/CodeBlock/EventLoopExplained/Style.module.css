@@ -1,0 +1,70 @@
+.root {
+  height: 650px;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 35px;
+  border-radius: 42px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 6px 6px rgba(0, 0, 0, 0.23);
+  padding: 10px;
+  background-color: #f0f4fa;
+}
+
+.infoContainer {
+  display: flex;
+  justify-content: space-between; /* יישור בין האלמנטים */
+  align-items: center;
+  width: 700px; /* מתאים את כל הקו לרוחב של הקופסה */
+  padding: 0 10px; /* רווח מהצדדים */
+}
+
+.role {
+  font-size: 16px;
+  text-align: left; /* יישור לשמאל */
+}
+
+.number {
+  font-size: 16px;
+  text-align: right; /* יישור לימין */
+}
+
+h1 {
+  font-size: 60px; /* גודל כותרת */
+  text-align: center; /* מיקום במרכז */
+  color: #333;
+  margin-bottom: 5px; /* מקטין את המרווח מתחת לכותרת */
+}
+
+.editor-container {
+  flex-grow: 1;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.back_button {
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  align-self: flex-end;
+  margin-top: 10px;
+}
+
+.back_button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.back_button:active {
+  background-color: #004085;
+  transform: scale(0.98);
+}
