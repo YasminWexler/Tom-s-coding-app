@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "1MW1zKD9UehTRqZqELmPfKrlP15DyKG52VFK6nv2PE0=",
+  "Source": "TomsWebApi",
+  "BasePath": "_content/TomsWebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

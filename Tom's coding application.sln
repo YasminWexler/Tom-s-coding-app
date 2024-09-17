@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TomsWebApi", "TomsWebApi\TomsWebApi.csproj", "{39A184C8-934A-4BAA-B031-89F8837FF769}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tom Library", "Tom Library\Tom Library.csproj", "{FFEF9A04-982C-453A-9CC3-B8087A42DB9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39A184C8-934A-4BAA-B031-89F8837FF769}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39A184C8-934A-4BAA-B031-89F8837FF769}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39A184C8-934A-4BAA-B031-89F8837FF769}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39A184C8-934A-4BAA-B031-89F8837FF769}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFEF9A04-982C-453A-9CC3-B8087A42DB9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFEF9A04-982C-453A-9CC3-B8087A42DB9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFEF9A04-982C-453A-9CC3-B8087A42DB9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFEF9A04-982C-453A-9CC3-B8087A42DB9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E61BF2B9-2C53-401E-BFE5-CB8A22761897}
+	EndGlobalSection
+EndGlobal

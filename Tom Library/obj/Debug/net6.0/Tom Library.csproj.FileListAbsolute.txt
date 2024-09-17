@@ -1,0 +1,14 @@
+C:\Users\Admin\Moveo\Tom's coding application\Tom Library\bin\Debug\net6.0\Tom Library.deps.json
+C:\Users\Admin\Moveo\Tom's coding application\Tom Library\bin\Debug\net6.0\Tom Library.runtimeconfig.json
+C:\Users\Admin\Moveo\Tom's coding application\Tom Library\bin\Debug\net6.0\Tom Library.dll
+C:\Users\Admin\Moveo\Tom's coding application\Tom Library\bin\Debug\net6.0\Tom Library.pdb
+C:\Users\Admin\Moveo\Tom's coding application\Tom Library\obj\Debug\net6.0\Tom Library.csproj.AssemblyReference.cache
+C:\Users\Admin\Moveo\Tom's coding application\Tom Library\obj\Debug\net6.0\Tom Library.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Moveo\Tom's coding application\Tom Library\obj\Debug\net6.0\Tom Library.AssemblyInfoInputs.cache
+C:\Users\Admin\Moveo\Tom's coding application\Tom Library\obj\Debug\net6.0\Tom Library.AssemblyInfo.cs
+C:\Users\Admin\Moveo\Tom's coding application\Tom Library\obj\Debug\net6.0\Tom Library.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Moveo\Tom's coding application\Tom Library\obj\Debug\net6.0\Tom Library.dll
+C:\Users\Admin\Moveo\Tom's coding application\Tom Library\obj\Debug\net6.0\refint\Tom Library.dll
+C:\Users\Admin\Moveo\Tom's coding application\Tom Library\obj\Debug\net6.0\Tom Library.pdb
+C:\Users\Admin\Moveo\Tom's coding application\Tom Library\obj\Debug\net6.0\Tom Library.genruntimeconfig.cache
+C:\Users\Admin\Moveo\Tom's coding application\Tom Library\obj\Debug\net6.0\ref\Tom Library.dll
