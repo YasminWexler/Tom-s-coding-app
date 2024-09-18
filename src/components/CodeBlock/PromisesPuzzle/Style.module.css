@@ -15,27 +15,27 @@
 
 .infoContainer {
   display: flex;
-  justify-content: space-between; /* יישור בין האלמנטים */
+  justify-content: space-between; 
   align-items: center;
-  width: 700px; /* מתאים את כל הקו לרוחב של הקופסה */
-  padding: 0 10px; /* רווח מהצדדים */
+  width: 700px; 
+  padding: 0 10px; 
 }
 
 .role {
   font-size: 16px;
-  text-align: left; /* יישור לשמאל */
+  text-align: left; 
 }
 
 .number {
   font-size: 16px;
-  text-align: right; /* יישור לימין */
+  text-align: right; 
 }
 
 h1 {
-  font-size: 60px; /* גודל כותרת */
-  text-align: center; /* מיקום במרכז */
+  font-size: 60px; 
+  text-align: center; 
   color: #333;
-  margin-bottom: 5px; /* מקטין את המרווח מתחת לכותרת */
+  margin-bottom: 5px; 
 }
 
 .editor-container {

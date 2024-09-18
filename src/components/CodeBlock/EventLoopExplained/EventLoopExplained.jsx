@@ -13,9 +13,13 @@ export function EventLoopExplained() {
 
   const { dataCode, title: roomName } = location.state;
   const [code, setCode] = useState(dataCode);
+  const sharat = "https://toms-web-app-c664d2505215.herokuapp.com/codeHub";
+  const local = "https://localhost:7015/codeHub";
+  const sharatSolution = `https://toms-web-app-c664d2505215.herokuapp.com/getSolutionByRoom/${roomName}`;
+  const localSolution = `https://localhost:7015/getSolutionByRoom/${roomName}`;
   useEffect(() => {
     const connect = new HubConnectionBuilder()
-      .withUrl("https://toms-web-app-c664d2505215.herokuapp.com/codeHub", {
+      .withUrl(local, {
         withCredentials: true,
       })
       .withAutomaticReconnect()
@@ -60,10 +64,8 @@ export function EventLoopExplained() {
 
   const checkSolution = async (newCode) => {
     try {
-      const response = await fetch(
-        `https://toms-web-app-c664d2505215.herokuapp.com/getSolutionByRoom/${roomName}`
-      );
-      const solution = await response.text(); 
+      const response = await fetch(localSolution);
+      const solution = await response.text();
       if (newCode.trim() === solution.trim()) {
         alert("Success! You've matched the solution! 😄");
       }
@@ -74,11 +76,11 @@ export function EventLoopExplained() {
 
   const handleCodeChange = async (newCode) => {
     setCode(newCode);
-    checkSolution(newCode); 
+    checkSolution(newCode);
 
     if (connection) {
       try {
-        await connection.invoke("UpdateCode", roomName, newCode); 
+        await connection.invoke("UpdateCode", roomName, newCode);
       } catch (error) {
         console.error("Failed to send code update: ", error);
       }

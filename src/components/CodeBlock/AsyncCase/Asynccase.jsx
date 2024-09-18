@@ -13,10 +13,14 @@ export function Asynccase() {
 
   const { dataCode, title: roomName } = location.state;
   const [code, setCode] = useState(dataCode);
+  const sharat = "https://toms-web-app-c664d2505215.herokuapp.com/codeHub";
+  const local = "https://localhost:7015/codeHub";
+  const sharatSolution = `https://toms-web-app-c664d2505215.herokuapp.com/getSolutionByRoom/${roomName}`;
+  const localSolution = `https://localhost:7015/getSolutionByRoom/${roomName}`;
 
   useEffect(() => {
     const connect = new HubConnectionBuilder()
-      .withUrl("https://toms-web-app-c664d2505215.herokuapp.com/codeHub", {
+      .withUrl(local, {
         withCredentials: true,
       })
       .withAutomaticReconnect()
@@ -61,12 +65,9 @@ export function Asynccase() {
 
   const checkSolution = async (newCode) => {
     try {
-      const response = await fetch(
-        `https://toms-web-app-c664d2505215.herokuapp.com/getSolutionByRoom/${roomName}`,
-        {
-          credentials: "include",
-        }
-      );
+      const response = await fetch(localSolution, {
+        credentials: "include",
+      });
       const solution = await response.text();
       console.log("Response:", response);
 

@@ -7,17 +7,16 @@ export function Lobby() {
 
   async function Navigator(e) {
     const name = e.target.name;
+    const sharat = `https://toms-web-app-c664d2505215.herokuapp.com/getBlockByTitle/${name}`;
+    const local = `https://localhost:7015/getBlockByTitle/${name}`;
 
     try {
-      const code = await fetch(
-        `https://toms-web-app-c664d2505215.herokuapp.com/getBlockByTitle/${name}`,
-        {
-          method: "GET",
-          headers: new Headers({
-            "Content-Type": "application/json; charset=UTF-8",
-          }),
-        }
-      );
+      const code = await fetch(local, {
+        method: "GET",
+        headers: new Headers({
+          "Content-Type": "application/json; charset=UTF-8",
+        }),
+      });
       console.log(code);
       const dataCode = await code.text();
       console.log(dataCode);

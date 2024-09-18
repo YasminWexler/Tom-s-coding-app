@@ -8,15 +8,15 @@
     margin: auto;
     margin-top: 100px;
     border-radius: 42px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.1); /* אפקט צל יותר עדין */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.1); 
     padding: 20px;
-    background-color: #f0f4fa; /* צבע רקע בהיר ועדין יותר */
+    background-color: #f0f4fa; 
   }
   
   h1 {
-    margin-bottom: 50px; /* הורדת המרווח כדי לא ליצור רווח גדול מדי */
-    font-size: 24px; /* שינוי גודל הכותרת */
-    color: #333; /* צבע כהה יותר לכותרת */
+    margin-bottom: 50px; 
+    font-size: 24px; 
+    color: #333; 
   }
   
   .btn_container {
@@ -28,25 +28,25 @@
   }
   
   .btn_lobby {
-    padding: 15px 25px; /* יותר ריווח פנימי לכפתורים */
+    padding: 15px 25px; 
     font-size: 16px;
     text-align: center;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #007bff; /* צבע רקע כחול מקצועי */
-    color: white; /* צבע טקסט */
-    border: none; /* ללא גבול */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* מעבר חלק בצבע והגדלה */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* הוספת צל עדין לכפתור */
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   }
   
   .btn_lobby:hover {
-    background-color: #0056b3; /* שינוי צבע רקע בעת מעבר עם העכבר */
-    transform: scale(1.05); /* אפקט הגדלה קטן */
+    background-color: #0056b3; 
+    transform: scale(1.05); 
   }
   
   .btn_lobby:active {
-    background-color: #004085; /* שינוי צבע בעת לחיצה */
-    transform: scale(0.98); /* אפקט הקטנה קטן בעת לחיצה */
+    background-color: #004085; 
+    transform: scale(0.98); 
   }
   
