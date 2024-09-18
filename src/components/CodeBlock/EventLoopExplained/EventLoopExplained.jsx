@@ -26,27 +26,22 @@ export function EventLoopExplained() {
       .then(() => {
         console.log("Connected to SignalR hub");
 
-        // הצטרפות לחדר
         connect
           .invoke("JoinRoom", roomName)
           .catch((err) => console.error("Error while joining room: ", err));
 
-        // קבלת התפקיד - מנטור או סטודנט
         connect.on("assignRole", (assignedRole) => {
           setRole(assignedRole);
         });
 
-        // קבלת עדכון מספר הסטודנטים
         connect.on("studentCountUpdate", (count) => {
           setStudentCount(count);
         });
 
-        // קבלת קוד מעודכן בזמן אמת
         connect.on("receiveCodeUpdate", (updatedCode) => {
           setCode(updatedCode);
         });
 
-        // הודעת עזיבת המנטור
         connect.on("mentorLeft", () => {
           alert("The mentor has left. Returning to lobby.");
           navigate("/");
@@ -68,7 +63,7 @@ export function EventLoopExplained() {
       const response = await fetch(
         `https://toms-web-app-c664d2505215.herokuapp.com/getSolutionByRoom/${roomName}`
       );
-      const solution = await response.text(); // קבלת הפתרון מהשרת
+      const solution = await response.text(); 
       if (newCode.trim() === solution.trim()) {
         alert("Success! You've matched the solution! 😄");
       }
@@ -77,14 +72,13 @@ export function EventLoopExplained() {
     }
   };
 
-  // שליחת עדכון קוד בזמן אמת
   const handleCodeChange = async (newCode) => {
-    setCode(newCode); // עדכון הקוד בעורך
-    checkSolution(newCode); // בדיקת התאמת הקוד לפתרון
+    setCode(newCode);
+    checkSolution(newCode); 
 
     if (connection) {
       try {
-        await connection.invoke("UpdateCode", roomName, newCode); // שליחת הקוד לשרת ולעדכן בזמן אמת
+        await connection.invoke("UpdateCode", roomName, newCode); 
       } catch (error) {
         console.error("Failed to send code update: ", error);
       }

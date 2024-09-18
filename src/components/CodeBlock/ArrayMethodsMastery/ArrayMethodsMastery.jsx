@@ -27,27 +27,22 @@ export function ArrayMethodsMastery() {
       .then(() => {
         console.log("Connected to SignalR hub");
 
-        // הצטרפות לחדר
         connect
           .invoke("JoinRoom", roomName)
           .catch((err) => console.error("Error while joining room: ", err));
 
-        // קבלת התפקיד - מנטור או סטודנט
         connect.on("assignRole", (assignedRole) => {
           setRole(assignedRole);
         });
 
-        // קבלת עדכון מספר הסטודנטים
         connect.on("studentCountUpdate", (count) => {
           setStudentCount(count);
         });
 
-        // קבלת קוד מעודכן בזמן אמת
         connect.on("receiveCodeUpdate", (updatedCode) => {
           setCode(updatedCode);
         });
 
-        // הודעת עזיבת המנטור
         connect.on("mentorLeft", () => {
           alert("The mentor has left. Returning to lobby.");
           navigate("/");
